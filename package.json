@@ -1,7 +1,7 @@
 {
-  "name": "@pancakeswap-libs/uikit",
-  "version": "0.10.3",
-  "description": "Set of UI components for pancake projects",
+  "name": "@zaigar-finance/uikit",
+  "version": "0.1.0",
+  "description": "Set of UI components for zaigar finance projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",

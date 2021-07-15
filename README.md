@@ -6,7 +6,7 @@ Zaigar Finance UIkit is a set of React components and hooks used to build pages 
 
 ## Install
 
-`yarn add @pancakeswap-libs/uikit`
+`yarn add @zaigar-finance/uikit`
 
 ## Setup
 
@@ -16,7 +16,7 @@ Before using Zaigar Finance UIkit, you need to provide the theme file to styled-
 
 ```
 import { ThemeProvider } from 'styled-components'
-import { light, dark } from '@pancakeswap-libs/uikit'
+import { light, dark } from '@zaigar-finance/uikit'
 ...
 <ThemeProvider theme={isDark}>...</ThemeProvider>
 ```
@@ -26,7 +26,7 @@ import { light, dark } from '@pancakeswap-libs/uikit'
 A reset CSS is available as a global styled component.
 
 ```
-import { ResetCSS } from '@pancakeswap-libs/uikit'
+import { ResetCSS } from '@zaigar-finance/uikit'
 ...
 <ResetCSS />
 ```
