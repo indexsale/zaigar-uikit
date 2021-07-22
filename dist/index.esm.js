@@ -2146,15 +2146,14 @@ var socials = [
     {
         label: "Telegram",
         icon: "TelegramIcon",
-        href: "https://t.me/zaigarfinance"
-       /* items: [
-           /* {
+        items: [
+            {
                 label: "English",
-                href: "https://t.me/ZCoreFinance",
+                href: "https://t.me/zaigarbounty",
             },
             {
                 label: "Português",
-                href: "https://t.me/ZCoreFinancePT",
+                href: "https://t.me/zaigarfinance",
             }, 
             // {
             //   label: "Bahasa Indonesia",
@@ -2196,11 +2195,11 @@ var socials = [
             //   label: "Français",
             //   href: "https://t.me/pancakeswapfr",
             // },
-            {
-                label: "Announcements",
-                href: "https://t.me/ZCoreCrypto",
-            },
-        ], */
+           // {
+           //     label: "Announcements",
+           //     href: "https://t.me/ZCoreCrypto",
+          //  },
+        ], 
     },
     {
         label: "Twitter",
