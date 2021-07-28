@@ -23,7 +23,7 @@ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
 
-var __assign = function() {
+var __assign = function () {
     __assign = Object.assign || function __assign(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
             s = arguments[i];
@@ -60,9 +60,11 @@ function __makeTemplateObject(cooked, raw) {
     return cooked;
 }
 
-var getThemeValue = function (path, fallback) { return function (theme) {
-    return get(theme, path, fallback);
-}; };
+var getThemeValue = function (path, fallback) {
+    return function (theme) {
+        return get(theme, path, fallback);
+    };
+};
 
 var rotate = keyframes(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
 var spinStyle = css(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  animation: ", " 2s linear infinite;\n"], ["\n  animation: ", " 2s linear infinite;\n"])), rotate);
@@ -122,10 +124,12 @@ Text.defaultProps = {
 };
 var templateObject_1$1;
 
-var getExternalLinkProps = function () { return ({
-    target: "_blank",
-    rel: "noreferrer noopener",
-}); };
+var getExternalLinkProps = function () {
+    return ({
+        target: "_blank",
+        rel: "noreferrer noopener",
+    });
+};
 
 var sizes = {
     SM: "sm",
@@ -155,10 +159,12 @@ var removePointerEvents = function (_a) {
     }
     return "";
 };
-var getButtonVariantProp = function (prop) { return function (_a) {
-    var theme = _a.theme, _b = _a.variant, variant = _b === void 0 ? variants.PRIMARY : _b;
-    return theme.button[variant][prop];
-}; };
+var getButtonVariantProp = function (prop) {
+    return function (_a) {
+        var theme = _a.theme, _b = _a.variant, variant = _b === void 0 ? variants.PRIMARY : _b;
+        return theme.button[variant][prop];
+    };
+};
 var StyledButton = styled.button(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border: ", ";\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  /* max-content instead of auto for Safari fix */\n  width: ", ";\n  height: ", ";\n  line-height: 1;\n  letter-spacing: 0.03em;\n  justify-content: center;\n  outline: 0;\n  padding: ", ";\n  transition: background-color 0.2s;\n  opacity: ", ";\n\n  &:hover:not(:disabled):not(.button--disabled):not(:active) {\n    background-color: ", ";\n    border-color: ", ";\n  }\n\n  &:focus:not(:active) {\n    box-shadow: 0 0 0 2px ", ";\n  }\n\n  &:active {\n    background-color: ", ";\n    box-shadow: ", ";\n  }\n\n  ", "\n  ", "\n  ", "\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border: ", ";\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  /* max-content instead of auto for Safari fix */\n  width: ", ";\n  height: ", ";\n  line-height: 1;\n  letter-spacing: 0.03em;\n  justify-content: center;\n  outline: 0;\n  padding: ", ";\n  transition: background-color 0.2s;\n  opacity: ", ";\n\n  &:hover:not(:disabled):not(.button--disabled):not(:active) {\n    background-color: ", ";\n    border-color: ", ";\n  }\n\n  &:focus:not(:active) {\n    box-shadow: 0 0 0 2px ", ";\n  }\n\n  &:active {\n    background-color: ", ";\n    box-shadow: ", ";\n  }\n\n  ", "\n  ", "\n  ", "\n"])), getButtonVariantProp("background"), getButtonVariantProp("border"), getButtonVariantProp("boxShadow"), getButtonVariantProp("color"), function (_a) {
     var fullWidth = _a.fullWidth;
     return (fullWidth ? "100%" : "max-content");
@@ -187,14 +193,14 @@ var Button = function (_a) {
     var isDisabled = isLoading || disabled;
     return (React.createElement(StyledButton, __assign({}, internalProps, props, { isLoading: isLoading, disabled: isDisabled }),
         React.isValidElement(startIcon) &&
-            React.cloneElement(startIcon, {
-                mr: "0.5rem",
-            }),
+        React.cloneElement(startIcon, {
+            mr: "0.5rem",
+        }),
         children,
         React.isValidElement(endIcon) &&
-            React.cloneElement(endIcon, {
-                ml: "0.5rem",
-            })));
+        React.cloneElement(endIcon, {
+            ml: "0.5rem",
+        })));
 };
 Button.defaultProps = {
     variant: variants.PRIMARY,
@@ -401,6 +407,11 @@ var Icon$u = function (props) {
 var Icon$v = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 90 90" }, props),
         React.createElement("image", { width: 90, height: 90, href: "/images/zai/9.png" })));
+};
+
+var Icon$v2 = function (props) {
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 90 90" }, props),
+        React.createElement("image", { width: 90, height: 90, href: "/images/zai/92.png" })));
 };
 
 var Icon$w = function (props) {
@@ -1025,26 +1036,26 @@ var getThemeTextColor = function (_a) {
 };
 var StyledTag = styled.div(templateObject_1$n || (templateObject_1$n = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border: 2px solid ", ";\n  border-radius: 16px;\n  color: ", ";\n  display: inline-flex;\n  font-size: 14px;\n  font-weight: 400;\n  height: 28px;\n  line-height: 1.5;\n  padding: 0 8px;\n  white-space: nowrap;\n\n  svg {\n    fill: ", ";\n  }\n"], ["\n  align-items: center;\n  background-color: ",
     ";\n  border: 2px solid ", ";\n  border-radius: 16px;\n  color: ", ";\n  display: inline-flex;\n  font-size: 14px;\n  font-weight: 400;\n  height: 28px;\n  line-height: 1.5;\n  padding: 0 8px;\n  white-space: nowrap;\n\n  svg {\n    fill: ", ";\n  }\n"])), function (_a) {
-    var outline = _a.outline, theme = _a.theme, _b = _a.variant, variant = _b === void 0 ? "primary" : _b;
-    return outline ? "transparent" : getColor$1(variant, theme);
-}, function (_a) {
-    var _b = _a.variant, variant = _b === void 0 ? "primary" : _b, theme = _a.theme;
-    return getColor$1(variant, theme);
-}, getThemeTextColor, getThemeTextColor);
+        var outline = _a.outline, theme = _a.theme, _b = _a.variant, variant = _b === void 0 ? "primary" : _b;
+        return outline ? "transparent" : getColor$1(variant, theme);
+    }, function (_a) {
+        var _b = _a.variant, variant = _b === void 0 ? "primary" : _b, theme = _a.theme;
+        return getColor$1(variant, theme);
+    }, getThemeTextColor, getThemeTextColor);
 var templateObject_1$n;
 
 var Tag = function (_a) {
     var startIcon = _a.startIcon, endIcon = _a.endIcon, children = _a.children, props = __rest(_a, ["startIcon", "endIcon", "children"]);
     return (React.createElement(StyledTag, __assign({}, props),
         React.isValidElement(startIcon) &&
-            React.cloneElement(startIcon, {
-                mr: "0.5rem",
-            }),
+        React.cloneElement(startIcon, {
+            mr: "0.5rem",
+        }),
         children,
         React.isValidElement(endIcon) &&
-            React.cloneElement(endIcon, {
-                ml: "0.5rem",
-            })));
+        React.cloneElement(endIcon, {
+            ml: "0.5rem",
+        })));
 };
 Tag.defaultProps = {
     variant: "primary",
@@ -1106,7 +1117,7 @@ var Progress = function (_a) {
 var rotate$1 = keyframes(templateObject_1$r || (templateObject_1$r = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
 var SpinnerIcon = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
-        React.createElement("image", { width: "96", height: "96", href: "/images/zai/9.png" })));
+        React.createElement("image", { width: "96", height: "96", href: "/images/zai/92.png" })));
 };
 var Container$1 = styled.div(templateObject_2$6 || (templateObject_2$6 = __makeTemplateObject(["\n  position: relative;\n"], ["\n  position: relative;\n"])));
 var RotatingPancakeIcon = styled(SpinnerIcon)(templateObject_3$2 || (templateObject_3$2 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"])), rotate$1);
@@ -1174,28 +1185,32 @@ var Toggle = function (_a) {
         React.createElement(Handle, null)));
 };
 
-var byTextAscending = function (getTextProperty) { return function (objectA, objectB) {
-    var upperA = getTextProperty(objectA).toUpperCase();
-    var upperB = getTextProperty(objectB).toUpperCase();
-    if (upperA < upperB) {
-        return -1;
-    }
-    if (upperA > upperB) {
-        return 1;
-    }
-    return 0;
-}; };
-var byTextDescending = function (getTextProperty) { return function (objectA, objectB) {
-    var upperA = getTextProperty(objectA).toUpperCase();
-    var upperB = getTextProperty(objectB).toUpperCase();
-    if (upperA > upperB) {
-        return -1;
-    }
-    if (upperA < upperB) {
-        return 1;
-    }
-    return 0;
-}; };
+var byTextAscending = function (getTextProperty) {
+    return function (objectA, objectB) {
+        var upperA = getTextProperty(objectA).toUpperCase();
+        var upperB = getTextProperty(objectB).toUpperCase();
+        if (upperA < upperB) {
+            return -1;
+        }
+        if (upperA > upperB) {
+            return 1;
+        }
+        return 0;
+    };
+};
+var byTextDescending = function (getTextProperty) {
+    return function (objectA, objectB) {
+        var upperA = getTextProperty(objectA).toUpperCase();
+        var upperB = getTextProperty(objectB).toUpperCase();
+        if (upperA > upperB) {
+            return -1;
+        }
+        if (upperA < upperB) {
+            return 1;
+        }
+        return 0;
+    };
+};
 
 var sortByColumn = function (data, sortColumn, columns) {
     var isAscending = null;
@@ -1237,142 +1252,150 @@ var getColumnsByName = function (columns) {
     });
     return columnsByName;
 };
-var createReducer = function () { return function (state, action) {
-    var rows = [];
-    var nextPage = 0;
-    var prevPage = 0;
-    var isAscending = null;
-    var sortedRows = [];
-    var columnCopy = [];
-    var filteredRows = [];
-    var selectedRowsById = {};
-    var stateCopy = __assign({}, state);
-    var rowIds = {};
-    switch (action.type) {
-        case "SET_ROWS":
-            rows = __spreadArrays(action.data);
-            // preserve sorting if a sort is already enabled when data changes
-            if (state.sortColumn) {
-                rows = sortByColumn(action.data, state.sortColumn, state.columns);
-            }
-            if (state.paginationEnabled === true) {
-                rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
-            }
-            if (state.paginationEnabled === true) {
-                rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
-            }
-            return __assign(__assign({}, state), { rows: rows, originalRows: action.data });
-        case "NEXT_PAGE":
-            nextPage = state.pagination.page + 1;
-            return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, nextPage), pagination: __assign(__assign({}, state.pagination), { page: nextPage, canNext: nextPage * state.pagination.perPage < state.originalRows.length, canPrev: nextPage !== 1 }) });
-        case "PREV_PAGE":
-            prevPage = state.pagination.page === 1 ? 1 : state.pagination.page - 1;
-            return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, prevPage), pagination: __assign(__assign({}, state.pagination), { page: prevPage, canNext: prevPage * state.pagination.perPage < state.originalRows.length, canPrev: prevPage !== 1 }) });
-        case "TOGGLE_SORT":
-            if (!(action.columnName in state.columnsByName)) {
-                throw new Error("Invalid column, " + action.columnName + " not found");
-            }
-            // loop through all columns and set the sort parameter to off unless
-            // it's the specified column (only one column at a time for )
-            columnCopy = state.columns.map(function (column) {
-                // if the row was found
-                if (action.columnName === column.name) {
-                    if (action.isAscOverride !== undefined) {
-                        // force the sort order
-                        isAscending = action.isAscOverride;
-                    }
-                    else {
-                        // if it's undefined, start by setting to ascending, otherwise toggle
-                        isAscending = column.sorted.asc === undefined ? true : !column.sorted.asc;
-                    }
-                    if (column.sort) {
-                        sortedRows = isAscending ? state.rows.sort(column.sort) : state.rows.sort(column.sort).reverse();
-                        // default to sort by string
-                    }
-                    else {
-                        sortedRows = isAscending
-                            ? state.rows.sort(byTextAscending(function (object) { return object.original[action.columnName]; }))
-                            : state.rows.sort(byTextDescending(function (object) { return object.original[action.columnName]; }));
-                    }
-                    return __assign(__assign({}, column), { sorted: {
-                            on: true,
-                            asc: isAscending,
-                        } });
+var createReducer = function () {
+    return function (state, action) {
+        var rows = [];
+        var nextPage = 0;
+        var prevPage = 0;
+        var isAscending = null;
+        var sortedRows = [];
+        var columnCopy = [];
+        var filteredRows = [];
+        var selectedRowsById = {};
+        var stateCopy = __assign({}, state);
+        var rowIds = {};
+        switch (action.type) {
+            case "SET_ROWS":
+                rows = __spreadArrays(action.data);
+                // preserve sorting if a sort is already enabled when data changes
+                if (state.sortColumn) {
+                    rows = sortByColumn(action.data, state.sortColumn, state.columns);
                 }
-                // set sorting to false for all other columns
-                return __assign(__assign({}, column), { sorted: {
-                        on: false,
-                        asc: false,
-                    } });
-            });
-            return __assign(__assign({}, state), { columns: columnCopy, rows: sortedRows, sortColumn: action.columnName, columnsByName: getColumnsByName(columnCopy) });
-        case "GLOBAL_FILTER":
-            filteredRows = action.filter(state.originalRows);
-            selectedRowsById = {};
-            state.selectedRows.forEach(function (row) {
-                var _a;
-                selectedRowsById[row.id] = (_a = row.selected) !== null && _a !== void 0 ? _a : false;
-            });
-            return __assign(__assign({}, state), { rows: filteredRows.map(function (row) {
-                    return selectedRowsById[row.id] ? __assign(__assign({}, row), { selected: selectedRowsById[row.id] }) : __assign({}, row);
-                }), filterOn: true });
-        case "SELECT_ROW":
-            stateCopy = __assign({}, state);
-            stateCopy.rows = stateCopy.rows.map(function (row) {
-                var newRow = __assign({}, row);
-                if (newRow.id === action.rowId) {
-                    newRow.selected = !newRow.selected;
+                if (state.paginationEnabled === true) {
+                    rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
                 }
-                return newRow;
-            });
-            stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
-                var newRow = __assign({}, row);
-                if (newRow.id === action.rowId) {
-                    newRow.selected = !newRow.selected;
+                if (state.paginationEnabled === true) {
+                    rows = getPaginatedData(rows, state.pagination.perPage, state.pagination.page);
                 }
-                return newRow;
-            });
-            stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected === true; });
-            stateCopy.toggleAllState =
-                stateCopy.selectedRows.length === stateCopy.rows.length
-                    ? (stateCopy.toggleAllState = true)
-                    : (stateCopy.toggleAllState = false);
-            return stateCopy;
-        case "SEARCH_STRING":
-            stateCopy = __assign({}, state);
-            stateCopy.rows = stateCopy.originalRows.filter(function (row) {
-                return (row.cells.filter(function (cell) {
-                    if (cell.value.includes(action.searchString)) {
-                        return true;
+                return __assign(__assign({}, state), { rows: rows, originalRows: action.data });
+            case "NEXT_PAGE":
+                nextPage = state.pagination.page + 1;
+                return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, nextPage), pagination: __assign(__assign({}, state.pagination), { page: nextPage, canNext: nextPage * state.pagination.perPage < state.originalRows.length, canPrev: nextPage !== 1 }) });
+            case "PREV_PAGE":
+                prevPage = state.pagination.page === 1 ? 1 : state.pagination.page - 1;
+                return __assign(__assign({}, state), { rows: getPaginatedData(state.originalRows, state.pagination.perPage, prevPage), pagination: __assign(__assign({}, state.pagination), { page: prevPage, canNext: prevPage * state.pagination.perPage < state.originalRows.length, canPrev: prevPage !== 1 }) });
+            case "TOGGLE_SORT":
+                if (!(action.columnName in state.columnsByName)) {
+                    throw new Error("Invalid column, " + action.columnName + " not found");
+                }
+                // loop through all columns and set the sort parameter to off unless
+                // it's the specified column (only one column at a time for )
+                columnCopy = state.columns.map(function (column) {
+                    // if the row was found
+                    if (action.columnName === column.name) {
+                        if (action.isAscOverride !== undefined) {
+                            // force the sort order
+                            isAscending = action.isAscOverride;
+                        }
+                        else {
+                            // if it's undefined, start by setting to ascending, otherwise toggle
+                            isAscending = column.sorted.asc === undefined ? true : !column.sorted.asc;
+                        }
+                        if (column.sort) {
+                            sortedRows = isAscending ? state.rows.sort(column.sort) : state.rows.sort(column.sort).reverse();
+                            // default to sort by string
+                        }
+                        else {
+                            sortedRows = isAscending
+                                ? state.rows.sort(byTextAscending(function (object) { return object.original[action.columnName]; }))
+                                : state.rows.sort(byTextDescending(function (object) { return object.original[action.columnName]; }));
+                        }
+                        return __assign(__assign({}, column), {
+                            sorted: {
+                                on: true,
+                                asc: isAscending,
+                            }
+                        });
                     }
-                    return false;
-                }).length > 0);
-            });
-            return stateCopy;
-        case "TOGGLE_ALL":
-            if (state.selectedRows.length < state.rows.length) {
-                stateCopy.rows = stateCopy.rows.map(function (row) {
-                    rowIds[row.id] = true;
-                    return __assign(__assign({}, row), { selected: true });
+                    // set sorting to false for all other columns
+                    return __assign(__assign({}, column), {
+                        sorted: {
+                            on: false,
+                            asc: false,
+                        }
+                    });
                 });
-                stateCopy.toggleAllState = true;
-            }
-            else {
-                stateCopy.rows = stateCopy.rows.map(function (row) {
-                    rowIds[row.id] = false;
-                    return __assign(__assign({}, row), { selected: false });
+                return __assign(__assign({}, state), { columns: columnCopy, rows: sortedRows, sortColumn: action.columnName, columnsByName: getColumnsByName(columnCopy) });
+            case "GLOBAL_FILTER":
+                filteredRows = action.filter(state.originalRows);
+                selectedRowsById = {};
+                state.selectedRows.forEach(function (row) {
+                    var _a;
+                    selectedRowsById[row.id] = (_a = row.selected) !== null && _a !== void 0 ? _a : false;
                 });
-                stateCopy.toggleAllState = false;
-            }
-            stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
-                return row.id in rowIds ? __assign(__assign({}, row), { selected: rowIds[row.id] }) : __assign({}, row);
-            });
-            stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected; });
-            return stateCopy;
-        default:
-            throw new Error("Invalid reducer action");
-    }
-}; };
+                return __assign(__assign({}, state), {
+                    rows: filteredRows.map(function (row) {
+                        return selectedRowsById[row.id] ? __assign(__assign({}, row), { selected: selectedRowsById[row.id] }) : __assign({}, row);
+                    }), filterOn: true
+                });
+            case "SELECT_ROW":
+                stateCopy = __assign({}, state);
+                stateCopy.rows = stateCopy.rows.map(function (row) {
+                    var newRow = __assign({}, row);
+                    if (newRow.id === action.rowId) {
+                        newRow.selected = !newRow.selected;
+                    }
+                    return newRow;
+                });
+                stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
+                    var newRow = __assign({}, row);
+                    if (newRow.id === action.rowId) {
+                        newRow.selected = !newRow.selected;
+                    }
+                    return newRow;
+                });
+                stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected === true; });
+                stateCopy.toggleAllState =
+                    stateCopy.selectedRows.length === stateCopy.rows.length
+                        ? (stateCopy.toggleAllState = true)
+                        : (stateCopy.toggleAllState = false);
+                return stateCopy;
+            case "SEARCH_STRING":
+                stateCopy = __assign({}, state);
+                stateCopy.rows = stateCopy.originalRows.filter(function (row) {
+                    return (row.cells.filter(function (cell) {
+                        if (cell.value.includes(action.searchString)) {
+                            return true;
+                        }
+                        return false;
+                    }).length > 0);
+                });
+                return stateCopy;
+            case "TOGGLE_ALL":
+                if (state.selectedRows.length < state.rows.length) {
+                    stateCopy.rows = stateCopy.rows.map(function (row) {
+                        rowIds[row.id] = true;
+                        return __assign(__assign({}, row), { selected: true });
+                    });
+                    stateCopy.toggleAllState = true;
+                }
+                else {
+                    stateCopy.rows = stateCopy.rows.map(function (row) {
+                        rowIds[row.id] = false;
+                        return __assign(__assign({}, row), { selected: false });
+                    });
+                    stateCopy.toggleAllState = false;
+                }
+                stateCopy.originalRows = stateCopy.originalRows.map(function (row) {
+                    return row.id in rowIds ? __assign(__assign({}, row), { selected: rowIds[row.id] }) : __assign({}, row);
+                });
+                stateCopy.selectedRows = stateCopy.originalRows.filter(function (row) { return row.selected; });
+                return stateCopy;
+            default:
+                throw new Error("Invalid reducer action");
+        }
+    };
+};
 var sortDataInOrder = function (data, columns) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return data.map(function (row) {
@@ -1388,10 +1411,10 @@ var sortDataInOrder = function (data, columns) {
     });
 };
 var makeRender = function (
-// eslint-disable-next-line
-value, 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-render, row) {
+    // eslint-disable-next-line
+    value,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    render, row) {
     return render ? function () { return render({ row: row, value: value }); } : function () { return value; };
 };
 var makeHeaderRender = function (label, render) {
@@ -1400,9 +1423,11 @@ var makeHeaderRender = function (label, render) {
 var useTable = function (columns, data, options) {
     var columnsWithSorting = useMemo(function () {
         return columns.map(function (column) {
-            return __assign(__assign({}, column), { label: column.label ? column.label : column.name, hidden: column.hidden ? column.hidden : false, sort: column.sort, sorted: {
+            return __assign(__assign({}, column), {
+                label: column.label ? column.label : column.name, hidden: column.hidden ? column.hidden : false, sort: column.sort, sorted: {
                     on: false,
-                } });
+                }
+            });
         });
     }, [columns]);
     var columnsByName = useMemo(function () { return getColumnsByName(columnsWithSorting); }, [columnsWithSorting]);
@@ -1416,14 +1441,14 @@ var useTable = function (columns, data, options) {
                 original: row,
                 cells: Object.entries(row)
                     .map(function (_a) {
-                    var column = _a[0], value = _a[1];
-                    return {
-                        hidden: columnsByName[column].hidden,
-                        field: column,
-                        value: value,
-                        render: makeRender(value, columnsByName[column].render, row),
-                    };
-                })
+                        var column = _a[0], value = _a[1];
+                        return {
+                            hidden: columnsByName[column].hidden,
+                            field: column,
+                            value: value,
+                            render: makeRender(value, columnsByName[column].render, row),
+                        };
+                    })
                     .filter(function (cell) { return !cell.hidden; }),
             };
         });
@@ -1767,17 +1792,19 @@ var ModalProvider = function (_a) {
             handleDismiss();
         }
     };
-    return (React.createElement(Context.Provider, { value: {
+    return (React.createElement(Context.Provider, {
+        value: {
             onPresent: handlePresent,
             onDismiss: handleDismiss,
             setCloseOnOverlayClick: setCloseOnOverlayClick,
-        } },
+        }
+    },
         isOpen && (React.createElement(ModalWrapper, null,
             React.createElement(Overlay, { show: true, onClick: handleOverlayDismiss }),
             React.isValidElement(modalNode) &&
-                React.cloneElement(modalNode, {
-                    onDismiss: handleDismiss,
-                }))),
+            React.cloneElement(modalNode, {
+                onDismiss: handleDismiss,
+            }))),
         children));
 };
 var templateObject_1$w;
@@ -1921,42 +1948,58 @@ var Icon$$ = function (props) {
         React.createElement("image", { id: "image0", width: "32", height: "24", x: "0", y: "0", href: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAMAAACsjQ8GAAAABGdBTUEAALGPC/xhBQAAACBjSFJN\nAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAtFBMVEX///8HUlAIGxgWS0UW\nTEUURkAVS0QVTEUVS0UVSkUVR0AWS0QVR0EIbmwIHBsYSEEWS0QWTEQYVU0SSUMUQjwWR0EVR0EW\nTEUWTkcWTEUWTEUWTEUWTEUWTEUWTEUWTEUWTEUWTEUWTkcVSEAWS0QVRkATTkgTPzoZQjsWS0QX\nTEUYWFEWTEUXT0cXTkcXUEgXSUIWTUUVSkMYUkoWTUYWS0QXRj8XUUkXTUYWTkYXT0j///8cqVcC\nAAAALHRSTlMAAAAAAAAAAAAAAAAAAACK6uyOho83Mu/s6+zz7fHy/hoNDUQNP4uWkfP1leNLk5QA\nAAABYktHRACIBR1IAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5QQIBhQPAPUYyAAAAJ1J\nREFUKM/N0kcTgkAMhmEUEBV7A2wUsX+i4q7t//8wr0ng4knfa56Z3cnEMP6hSrcHUX9QJWB4yiTI\nziMCLtexabHMSX4jQGm75tRJTsPWIMCDH0xZgY8ZAXOUtPgGeFgWYk+EiGJRhJAAwCoEMBDLeSxA\nIkHCgNJNl8/dllYE3NUq5X9M1/mDgM1TyS283lsC2ru9BIdj54f3V+wDizknjbSuOxcAAAAldEVY\ndGRhdGU6Y3JlYXRlADIwMjEtMDQtMDhUMDY6MjA6MTUrMDA6MDDn1Nm6AAAAJXRFWHRkYXRlOm1v\nZGlmeQAyMDIxLTA0LTA4VDA2OjIwOjE1KzAwOjAwlolhBgAAAABJRU5ErkJggg==" })));
 };
 
-var Icon$10 = function (props) { return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-    React.createElement("g", { fillRule: "evenodd" },
-        React.createElement("path", { d: "M11.549 18.906c3.81 0 6.906-3.09 6.906-6.906A6.908 6.908 0 006.509 7.278a6.909 6.909 0 005.04 11.628zm-2.41-4.173c.063-.225.122-.455.196-.676.083-.26.152-.294.392-.166.411.215.842.333 1.297.391.294.035.583.005.853-.112.51-.22.587-.808.156-1.166a1.937 1.937 0 00-.484-.284c-.446-.196-.911-.343-1.328-.598-.68-.406-1.117-.97-1.063-1.797.06-.94.588-1.523 1.45-1.837.353-.127.358-.122.358-.495v-.377c.005-.279.054-.328.333-.338.088-.005.171 0 .26 0 .592 0 .592 0 .597.593 0 .421 0 .421.421.485.319.049.627.142.921.274.162.074.225.186.176.358-.073.254-.142.514-.225.769-.078.24-.152.274-.382.161a2.904 2.904 0 00-1.46-.289 1.096 1.096 0 00-.391.079c-.441.19-.515.68-.138.984.191.152.407.265.632.358.392.161.784.318 1.156.524 1.185.656 1.504 2.14.671 3.154a2.25 2.25 0 01-1.15.74c-.202.054-.29.161-.28.367.01.206 0 .407 0 .612 0 .182-.093.28-.274.284-.22.005-.441.005-.657 0-.19-.004-.284-.112-.284-.298 0-.147-.005-.3-.005-.446-.005-.328-.014-.343-.328-.392-.406-.064-.803-.157-1.17-.338-.304-.147-.333-.22-.25-.524z" }),
-        React.createElement("path", { d: "M19.028 19.484c-3.987 3.987-10.389 4.12-14.537.407h1.332v-1.42H2.042V22.25h1.42v-1.376A11.967 11.967 0 0011.544 24c3.076 0 6.147-1.17 8.488-3.512l.504-.504-1.004-1.004-.504.504zM19.635 1.749v1.376A11.967 11.967 0 0011.553 0C8.478 0 5.407 1.17 3.065 3.512l-.5.5L3.57 5.015l.504-.505C8.061.524 14.463.391 18.611 4.104H17.28v1.42H21.06V1.75h-1.425z" })))); };
+var Icon$10 = function (props) {
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
+        React.createElement("g", { fillRule: "evenodd" },
+            React.createElement("path", { d: "M11.549 18.906c3.81 0 6.906-3.09 6.906-6.906A6.908 6.908 0 006.509 7.278a6.909 6.909 0 005.04 11.628zm-2.41-4.173c.063-.225.122-.455.196-.676.083-.26.152-.294.392-.166.411.215.842.333 1.297.391.294.035.583.005.853-.112.51-.22.587-.808.156-1.166a1.937 1.937 0 00-.484-.284c-.446-.196-.911-.343-1.328-.598-.68-.406-1.117-.97-1.063-1.797.06-.94.588-1.523 1.45-1.837.353-.127.358-.122.358-.495v-.377c.005-.279.054-.328.333-.338.088-.005.171 0 .26 0 .592 0 .592 0 .597.593 0 .421 0 .421.421.485.319.049.627.142.921.274.162.074.225.186.176.358-.073.254-.142.514-.225.769-.078.24-.152.274-.382.161a2.904 2.904 0 00-1.46-.289 1.096 1.096 0 00-.391.079c-.441.19-.515.68-.138.984.191.152.407.265.632.358.392.161.784.318 1.156.524 1.185.656 1.504 2.14.671 3.154a2.25 2.25 0 01-1.15.74c-.202.054-.29.161-.28.367.01.206 0 .407 0 .612 0 .182-.093.28-.274.284-.22.005-.441.005-.657 0-.19-.004-.284-.112-.284-.298 0-.147-.005-.3-.005-.446-.005-.328-.014-.343-.328-.392-.406-.064-.803-.157-1.17-.338-.304-.147-.333-.22-.25-.524z" }),
+            React.createElement("path", { d: "M19.028 19.484c-3.987 3.987-10.389 4.12-14.537.407h1.332v-1.42H2.042V22.25h1.42v-1.376A11.967 11.967 0 0011.544 24c3.076 0 6.147-1.17 8.488-3.512l.504-.504-1.004-1.004-.504.504zM19.635 1.749v1.376A11.967 11.967 0 0011.553 0C8.478 0 5.407 1.17 3.065 3.512l-.5.5L3.57 5.015l.504-.505C8.061.524 14.463.391 18.611 4.104H17.28v1.42H21.06V1.75h-1.425z" }))));
+};
 
-var Icon$11 = function (props) { return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-    React.createElement("path", { d: "M10.797 17.41a.703.703 0 11-.001 1.406.703.703 0 01.001-1.405m11.02-4.347a.703.703 0 11.002-1.405.703.703 0 01-.002 1.405m0-2.874a2.176 2.176 0 00-2.173 2.173c0 .233.039.465.115.691l-7.178 3.821a2.164 2.164 0 00-1.784-.936c-.828 0-1.583.474-1.948 1.215l-6.45-3.4c-.68-.358-1.19-1.48-1.137-2.502.028-.532.213-.946.493-1.106.178-.1.392-.092.619.027l.043.023c1.709.9 7.301 3.846 7.537 3.955.363.168.565.236 1.184-.057l11.56-6.013c.17-.064.368-.226.368-.472 0-.342-.354-.477-.355-.477-.657-.316-1.668-.789-2.654-1.25-2.107-.987-4.495-2.105-5.544-2.654-.905-.474-1.634-.075-1.764.006l-.253.125C7.776 5.693 1.46 8.822 1.1 9.041.456 9.432.057 10.213.006 11.182c-.081 1.537.703 3.138 1.823 3.726l6.82 3.517a2.174 2.174 0 002.148 1.86 2.176 2.176 0 002.173-2.14l7.51-4.07a2.176 2.176 0 003.51-1.712 2.176 2.176 0 00-2.173-2.173", fillRule: "evenodd" }))); };
+var Icon$11 = function (props) {
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
+        React.createElement("path", { d: "M10.797 17.41a.703.703 0 11-.001 1.406.703.703 0 01.001-1.405m11.02-4.347a.703.703 0 11.002-1.405.703.703 0 01-.002 1.405m0-2.874a2.176 2.176 0 00-2.173 2.173c0 .233.039.465.115.691l-7.178 3.821a2.164 2.164 0 00-1.784-.936c-.828 0-1.583.474-1.948 1.215l-6.45-3.4c-.68-.358-1.19-1.48-1.137-2.502.028-.532.213-.946.493-1.106.178-.1.392-.092.619.027l.043.023c1.709.9 7.301 3.846 7.537 3.955.363.168.565.236 1.184-.057l11.56-6.013c.17-.064.368-.226.368-.472 0-.342-.354-.477-.355-.477-.657-.316-1.668-.789-2.654-1.25-2.107-.987-4.495-2.105-5.544-2.654-.905-.474-1.634-.075-1.764.006l-.253.125C7.776 5.693 1.46 8.822 1.1 9.041.456 9.432.057 10.213.006 11.182c-.081 1.537.703 3.138 1.823 3.726l6.82 3.517a2.174 2.174 0 002.148 1.86 2.176 2.176 0 002.173-2.14l7.51-4.07a2.176 2.176 0 003.51-1.712 2.176 2.176 0 00-2.173-2.173", fillRule: "evenodd" })));
+};
 
-var Icon$12 = function (props) { return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-    React.createElement("path", { d: "M11.999 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.386.6.11.819-.26.819-.578 0-.284-.01-1.04-.017-2.04-3.337.724-4.042-1.61-4.042-1.61-.546-1.386-1.332-1.755-1.332-1.755-1.09-.744.082-.73.082-.73 1.205.086 1.838 1.238 1.838 1.238 1.07 1.833 2.81 1.304 3.493.996.109-.775.419-1.304.762-1.603C7.145 17 4.343 15.97 4.343 11.373c0-1.31.468-2.382 1.236-3.22-.124-.304-.536-1.524.118-3.176 0 0 1.007-.323 3.3 1.23.956-.266 1.983-.4 3.003-.404 1.02.005 2.046.138 3.005.404 2.29-1.553 3.296-1.23 3.296-1.23.655 1.652.243 2.872.12 3.176.77.838 1.233 1.91 1.233 3.22 0 4.61-2.806 5.624-5.478 5.921.43.37.814 1.103.814 2.223 0 1.603-.015 2.898-.015 3.291 0 .321.217.695.825.578C20.565 21.796 24 17.3 24 12c0-6.627-5.373-12-12.001-12", fillRule: "evenodd" }))); };
+var Icon$12 = function (props) {
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
+        React.createElement("path", { d: "M11.999 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.386.6.11.819-.26.819-.578 0-.284-.01-1.04-.017-2.04-3.337.724-4.042-1.61-4.042-1.61-.546-1.386-1.332-1.755-1.332-1.755-1.09-.744.082-.73.082-.73 1.205.086 1.838 1.238 1.838 1.238 1.07 1.833 2.81 1.304 3.493.996.109-.775.419-1.304.762-1.603C7.145 17 4.343 15.97 4.343 11.373c0-1.31.468-2.382 1.236-3.22-.124-.304-.536-1.524.118-3.176 0 0 1.007-.323 3.3 1.23.956-.266 1.983-.4 3.003-.404 1.02.005 2.046.138 3.005.404 2.29-1.553 3.296-1.23 3.296-1.23.655 1.652.243 2.872.12 3.176.77.838 1.233 1.91 1.233 3.22 0 4.61-2.806 5.624-5.478 5.921.43.37.814 1.103.814 2.223 0 1.603-.015 2.898-.015 3.291 0 .321.217.695.825.578C20.565 21.796 24 17.3 24 12c0-6.627-5.373-12-12.001-12", fillRule: "evenodd" })));
+};
 
-var Icon$13 = function (props) { return (React.createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
-    React.createElement("path", { d: "M28 25V10a1 1 0 00-1-1h-4a1 1 0 00-1 1v15h-2V6a1 1 0 00-1-1h-4a1 1 0 00-1 1v19h-2V15a1 1 0 00-1-1H7a1 1 0 00-1 1v10H4V5H2v21a1 1 0 001 1h27v-2zm-4-14h2v14h-2zm-8-4h2v18h-2zm-8 9h2v9H8z" }))); };
+var Icon$13 = function (props) {
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
+        React.createElement("path", { d: "M28 25V10a1 1 0 00-1-1h-4a1 1 0 00-1 1v15h-2V6a1 1 0 00-1-1h-4a1 1 0 00-1 1v19h-2V15a1 1 0 00-1-1H7a1 1 0 00-1 1v10H4V5H2v21a1 1 0 001 1h27v-2zm-4-14h2v14h-2zm-8-4h2v18h-2zm-8 9h2v9H8z" })));
+};
 
-var Icon$14 = function (props) { return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-    React.createElement("g", { fillRule: "evenodd" },
-        React.createElement("path", { d: "M9.822 16.437l6.716-8.467-5.934-1.717-4.164 7.979z" }),
-        React.createElement("path", { d: "M21.428 8.124a1.309 1.309 0 00-1.839.213l-9.198 11.596-7.371-4.806 6.853-13.13A1.31 1.31 0 007.552.784L.149 14.97a1.31 1.31 0 00.445 1.702l9.367 6.106c.566.369 1.32.246 1.74-.283l9.94-12.532a1.31 1.31 0 00-.213-1.839zM22.635 13.414c-.723 0-1.31 2.07-1.31 2.793a1.31 1.31 0 002.62 0c0-.723-.587-2.793-1.31-2.793z" })))); };
+var Icon$14 = function (props) {
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
+        React.createElement("g", { fillRule: "evenodd" },
+            React.createElement("path", { d: "M9.822 16.437l6.716-8.467-5.934-1.717-4.164 7.979z" }),
+            React.createElement("path", { d: "M21.428 8.124a1.309 1.309 0 00-1.839.213l-9.198 11.596-7.371-4.806 6.853-13.13A1.31 1.31 0 007.552.784L.149 14.97a1.31 1.31 0 00.445 1.702l9.367 6.106c.566.369 1.32.246 1.74-.283l9.94-12.532a1.31 1.31 0 00-.213-1.839zM22.635 13.414c-.723 0-1.31 2.07-1.31 2.793a1.31 1.31 0 002.62 0c0-.723-.587-2.793-1.31-2.793z" }))));
+};
 
-var Icon$15 = function (props) { return (React.createElement(Svg, __assign({ viewBox: "0 0 48 48" }, props),
-    React.createElement("path", { d: "M0 10H6V16H0z" }),
-    React.createElement("path", { d: "M0 19.917H6V25.917H0z" }),
-    React.createElement("path", { d: "M0 30.084H6V36.084H0z" }),
-    React.createElement("path", { d: "M10 10H48V16H10z" }),
-    React.createElement("path", { d: "M10 19.917H48V25.917H10z" }),
-    React.createElement("path", { d: "M10 30.084H48V36.084H10z" }))); };
+var Icon$15 = function (props) {
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 48 48" }, props),
+        React.createElement("path", { d: "M0 10H6V16H0z" }),
+        React.createElement("path", { d: "M0 19.917H6V25.917H0z" }),
+        React.createElement("path", { d: "M0 30.084H6V36.084H0z" }),
+        React.createElement("path", { d: "M10 10H48V16H10z" }),
+        React.createElement("path", { d: "M10 19.917H48V25.917H10z" }),
+        React.createElement("path", { d: "M10 30.084H48V36.084H10z" })));
+};
 
-var Icon$16 = function (props) { return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
-    React.createElement("path", { d: "M13.545 11.826c0 3.76-3.028 6.81-6.763 6.81-3.736 0-6.764-3.048-6.764-6.81 0-3.762 3.029-6.81 6.764-6.81 3.735 0 6.763 3.049 6.763 6.81zm7.42 0c0 3.54-1.514 6.41-3.382 6.41-1.867 0-3.381-2.87-3.381-6.41s1.514-6.41 3.381-6.41c1.868 0 3.382 2.87 3.382 6.41zm3.035 0c0 3.172-.533 5.743-1.19 5.743-.656 0-1.189-2.572-1.189-5.743 0-3.172.533-5.744 1.19-5.744.657 0 1.189 2.572 1.189 5.744z", fillRule: "evenodd" }))); };
+var Icon$16 = function (props) {
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
+        React.createElement("path", { d: "M13.545 11.826c0 3.76-3.028 6.81-6.763 6.81-3.736 0-6.764-3.048-6.764-6.81 0-3.762 3.029-6.81 6.764-6.81 3.735 0 6.763 3.049 6.763 6.81zm7.42 0c0 3.54-1.514 6.41-3.382 6.41-1.867 0-3.381-2.87-3.381-6.41s1.514-6.41 3.381-6.41c1.868 0 3.382 2.87 3.382 6.41zm3.035 0c0 3.172-.533 5.743-1.19 5.743-.656 0-1.189-2.572-1.189-5.743 0-3.172.533-5.744 1.19-5.744.657 0 1.189 2.572 1.189 5.744z", fillRule: "evenodd" })));
+};
 
-var Icon$17 = function (props) { return (React.createElement(Svg, __assign({ viewBox: "0 0 24 15" }, props),
-    React.createElement("g", { fillRule: "nonzero", fill: "none" },
-        React.createElement("path", { d: "M0 14.777s4.667-.341 6.375-3.984C8.083 7.15 7.798.035 16.108.035c1.822 0 3.818.862 4.91 1.622 5.478 3.814 2.888 11.64-3.544 9.634 0 0 2.334-.1 2.334-3.173 0-3.074-3.848-3.53-4.44-.968-.421 1.825-.17 7.343 7.855 7.627", fill: "#88E2DB" }),
-        React.createElement("path", { d: "M17.474 11.291c1.992 0 5.891-3.088 3.526-6.768-1.654-2.573-6.172-3.093-9.388.123C8.399 7.858 10.298 14.082.03 14.775c.4-.037 4.718-.51 6.345-3.982C8.083 7.15 7.798.035 16.108.035c1.822 0 3.817.862 4.91 1.622 5.478 3.814 2.888 11.64-3.544 9.634z", fill: "#A5F2EA" }),
-        React.createElement("path", { d: "M19.06 11.6c4.601-.341 5.9-6.644 1.16-9.943C19.19.941 17.36.134 15.628.044c.157-.006.318-.009.481-.009 1.822 0 3.817.862 4.91 1.622 5.002 3.483 3.277 10.31-1.957 9.943z", fill: "#C9F7F1" }),
-        React.createElement("path", { d: "M23.223 14.777h-10.64c-1.195-.496-1.668-2.24-1.028-4.838.71-2.886 2.094-4.442 4.155-4.781a3.872 3.872 0 012.811.607c-1.176-.63-2.787-.199-3.153 1.385-.422 1.825-.17 7.343 7.855 7.627z", fill: "#73C6BE" })))); };
+var Icon$17 = function (props) {
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 24 15" }, props),
+        React.createElement("g", { fillRule: "nonzero", fill: "none" },
+            React.createElement("path", { d: "M0 14.777s4.667-.341 6.375-3.984C8.083 7.15 7.798.035 16.108.035c1.822 0 3.818.862 4.91 1.622 5.478 3.814 2.888 11.64-3.544 9.634 0 0 2.334-.1 2.334-3.173 0-3.074-3.848-3.53-4.44-.968-.421 1.825-.17 7.343 7.855 7.627", fill: "#88E2DB" }),
+            React.createElement("path", { d: "M17.474 11.291c1.992 0 5.891-3.088 3.526-6.768-1.654-2.573-6.172-3.093-9.388.123C8.399 7.858 10.298 14.082.03 14.775c.4-.037 4.718-.51 6.345-3.982C8.083 7.15 7.798.035 16.108.035c1.822 0 3.817.862 4.91 1.622 5.478 3.814 2.888 11.64-3.544 9.634z", fill: "#A5F2EA" }),
+            React.createElement("path", { d: "M19.06 11.6c4.601-.341 5.9-6.644 1.16-9.943C19.19.941 17.36.134 15.628.044c.157-.006.318-.009.481-.009 1.822 0 3.817.862 4.91 1.622 5.002 3.483 3.277 10.31-1.957 9.943z", fill: "#C9F7F1" }),
+            React.createElement("path", { d: "M23.223 14.777h-10.64c-1.195-.496-1.668-2.24-1.028-4.838.71-2.886 2.094-4.442 4.155-4.781a3.872 3.872 0 012.811.607c-1.176-.63-2.787-.199-3.153 1.385-.422 1.825-.17 7.343 7.855 7.627z", fill: "#73C6BE" }))));
+};
 
 var Icon$18 = function (props) {
     return (React.createElement(Svg, __assign({ width: "24px", height: "24px", viewBox: "0 0 24 24" }, props),
@@ -2154,7 +2197,7 @@ var socials = [
             {
                 label: "Português",
                 href: "https://t.me/zaigarfinance",
-            }, 
+            },
             // {
             //   label: "Bahasa Indonesia",
             //   href: "https://t.me/PancakeSwapIndonesia",
@@ -2195,11 +2238,11 @@ var socials = [
             //   label: "Français",
             //   href: "https://t.me/pancakeswapfr",
             // },
-           // {
-           //     label: "Announcements",
-           //     href: "https://t.me/ZCoreCrypto",
-          //  },
-        ], 
+            // {
+            //     label: "Announcements",
+            //     href: "https://t.me/ZCoreCrypto",
+            //  },
+        ],
     },
     {
         label: "Twitter",
@@ -2307,8 +2350,10 @@ var PanelBody = function (_a) {
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (entry.items) {
             return (React.createElement(Accordion, { key: entry.label, isPushed: isPushed, pushNav: pushNav, icon: iconElement, label: entry.label, initialOpenState: entry.initialOpenState, className: calloutClass }, isPushed &&
-                entry.items.map(function (item) { return (React.createElement(MenuEntry, { key: item.href, secondary: true, isActive: item.href === location.pathname, onClick: handleClick },
-                    React.createElement(MenuLink, { href: item.href }, item.label))); })));
+                entry.items.map(function (item) {
+                    return (React.createElement(MenuEntry, { key: item.href, secondary: true, isActive: item.href === location.pathname, onClick: handleClick },
+                        React.createElement(MenuLink, { href: item.href }, item.label)));
+                })));
         }
         return (React.createElement(MenuEntry, { key: entry.label, isActive: entry.href === location.pathname, className: calloutClass },
             React.createElement(MenuLink, { href: entry.href, onClick: handleClick },
@@ -2327,8 +2372,10 @@ var Container$4 = styled.div(templateObject_1$C || (templateObject_1$C = __makeT
 var PriceLink = styled.a(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var SettingsEntry = styled.div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
 var SocialEntry = styled.div(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
+var SocialEntry2 = styled.div(templateObject_4$2 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 0 6px;\n"], ["\n  display: block;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 0 6px;\n"])), MENU_ENTRY_HEIGHT;
+
 var PanelFooter = function (_a) {
-    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd, currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang, priceLink = _a.priceLink;
+    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd, zaifPriceUsd = _a.zaifPriceUsd, currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang, priceLinkZfai = _a.priceLinkZfai, priceLinkZaif = _a.priceLinkZaif;
     if (!isPushed) {
         return (React.createElement(Container$4, null,
             React.createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
@@ -2336,29 +2383,39 @@ var PanelFooter = function (_a) {
     }
     return (React.createElement(Container$4, null,
         React.createElement(SocialEntry, null,
-            cakePriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
-                React.createElement(Icon$v, { width: "24px", mr: "8px" }),
+            cakePriceUsd ? (React.createElement(PriceLink, { href: priceLinkZfai, target: "_blank" },
+                React.createElement(Icon$v, { width: "34px", mr: "8px" }),
                 React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
-            React.createElement(Flex, null, socials.map(function (social, index) {
-                var Icon = Icons$1[social.icon];
-                var iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
-                var mr = index < socials.length - 1 ? "24px" : 0;
-                if (social.items) {
-                    return (React.createElement(Dropdown, { key: social.label, position: "top", target: React.createElement(Icon, __assign({}, iconProps, { mr: mr })) }, social.items.map(function (item) { return (React.createElement(Link, { external: true, key: item.label, href: item.href, "aria-label": item.label, color: "textSubtle" }, item.label)); })));
-                }
-                return (React.createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
-                    React.createElement(Icon, __assign({}, iconProps))));
-            }))),
+            cakePriceUsd ? (React.createElement(PriceLink, { href: priceLinkZaif, target: "_blank" },
+                React.createElement(Icon$v2, { width: "24px", mr: "8px" }),
+                React.createElement(Text, { color: "textSubtle", bold: true }, "$" + zaifPriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }))
+        ),
+        React.createElement(SocialEntry2, null, socials.map(function (social, index) {
+            var Icon = Icons$1[social.icon];
+            var iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
+            var mr = index < socials.length - 1 ? "24px" : 0;
+            if (social.items) {
+                return (React.createElement(Dropdown, { key: social.label, position: "top", target: React.createElement(Icon, __assign({}, iconProps, { mr: mr })) }, social.items.map(function (item) { return (React.createElement(Link, { external: true, key: item.label, href: item.href, "aria-label": item.label, color: "textSubtle" }, item.label)); })));
+            }
+            return (React.createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
+                React.createElement(Icon, __assign({}, iconProps))));
+        })),
         React.createElement(SettingsEntry, null,
             React.createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); } },
                 React.createElement(Flex, { alignItems: "center" },
                     React.createElement(SunIcon, { color: isDark ? "textDisabled" : "text", width: "24px" }),
                     React.createElement(Text, { color: "textDisabled", mx: "4px" }, "/"),
                     React.createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "24px" }))),
-            React.createElement(Dropdown, { position: "top-right", target: React.createElement(Button, { variant: "text", startIcon: React.createElement(LanguageIcon, { color: "textSubtle", width: "24px" }) },
-                    React.createElement(Text, { color: "textSubtle" }, currentLang === null || currentLang === void 0 ? void 0 : currentLang.toUpperCase())) }, langs.map(function (lang) { return (React.createElement(MenuButton, { key: lang.code, fullWidth: true, onClick: function () { return setLang(lang); }, 
-                // Safari fix
-                style: { minHeight: "32px", height: "auto" } }, lang.language)); })))));
+            React.createElement(Dropdown, {
+                position: "top-right", target: React.createElement(Button, { variant: "text", startIcon: React.createElement(LanguageIcon, { color: "textSubtle", width: "24px" }) },
+                    React.createElement(Text, { color: "textSubtle" }, currentLang === null || currentLang === void 0 ? void 0 : currentLang.toUpperCase()))
+            }, langs.map(function (lang) {
+                return (React.createElement(MenuButton, {
+                    key: lang.code, fullWidth: true, onClick: function () { return setLang(lang); },
+                    // Safari fix
+                    style: { minHeight: "32px", height: "auto" }
+                }, lang.language));
+            })))));
 };
 var templateObject_1$C, templateObject_2$c, templateObject_3$7, templateObject_4$2;
 
@@ -2507,11 +2564,13 @@ var localStorageKey = "accountStatus";
 var WalletCard = function (_a) {
     var login = _a.login, walletConfig = _a.walletConfig, onDismiss = _a.onDismiss, mb = _a.mb;
     var title = walletConfig.title, Icon = walletConfig.icon;
-    return (React.createElement(Button, { fullWidth: true, variant: "tertiary", onClick: function () {
+    return (React.createElement(Button, {
+        fullWidth: true, variant: "tertiary", onClick: function () {
             login(walletConfig.connectorId);
             window.localStorage.setItem(localStorageKey, "1");
             onDismiss();
-        }, style: { justifyContent: "space-between" }, mb: mb, id: "wallet-connect-" + title.toLocaleLowerCase() },
+        }, style: { justifyContent: "space-between" }, mb: mb, id: "wallet-connect-" + title.toLocaleLowerCase()
+    },
         React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, title),
         React.createElement(Icon, { width: "32px" })));
 };
@@ -2544,7 +2603,8 @@ var Tooltip = styled.div(templateObject_2$d || (templateObject_2$d = __makeTempl
 var CopyToClipboard = function (_a) {
     var toCopy = _a.toCopy, children = _a.children, props = __rest(_a, ["toCopy", "children"]);
     var _b = useState(false), isTooltipDisplayed = _b[0], setIsTooltipDisplayed = _b[1];
-    return (React.createElement(StyleButton, __assign({ small: true, bold: true, onClick: function () {
+    return (React.createElement(StyleButton, __assign({
+        small: true, bold: true, onClick: function () {
             if (navigator.clipboard) {
                 navigator.clipboard.writeText(toCopy);
                 setIsTooltipDisplayed(true);
@@ -2552,7 +2612,8 @@ var CopyToClipboard = function (_a) {
                     setIsTooltipDisplayed(false);
                 }, 1000);
             }
-        } }, props),
+        }
+    }, props),
         children,
         React.createElement(Icon$n, { width: "20px", color: "primary", ml: "4px" }),
         React.createElement(Tooltip, { isTooltipDisplayed: isTooltipDisplayed }, "Copied")));
@@ -2567,12 +2628,14 @@ var AccountModal = function (_a) {
             React.createElement(LinkExternal, { small: true, href: "https://bscscan.com/address/" + account, mr: "16px" }, "View on BscScan"),
             React.createElement(CopyToClipboard, { toCopy: account }, "Copy Address")),
         React.createElement(Flex, { justifyContent: "center" },
-            React.createElement(Button, { size: "sm", variant: "secondary", onClick: function () {
+            React.createElement(Button, {
+                size: "sm", variant: "secondary", onClick: function () {
                     logout();
                     window.localStorage.removeItem(localStorageKey);
                     onDismiss();
                     window.location.reload();
-                } }, "Logout"))));
+                }
+            }, "Logout"))));
 };
 
 var useWalletModal = function (login, logout, account) {
@@ -2585,11 +2648,15 @@ var UserBlock = function (_a) {
     var account = _a.account, login = _a.login, logout = _a.logout;
     var _b = useWalletModal(login, logout, account), onPresentConnectModal = _b.onPresentConnectModal, onPresentAccountModal = _b.onPresentAccountModal;
     var accountEllipsis = account ? account.substring(0, 4) + "..." + account.substring(account.length - 4) : null;
-    return (React.createElement("div", null, account ? (React.createElement(Button, { size: "sm", variant: "tertiary", onClick: function () {
+    return (React.createElement("div", null, account ? (React.createElement(Button, {
+        size: "sm", variant: "tertiary", onClick: function () {
             onPresentAccountModal();
-        } }, accountEllipsis)) : (React.createElement(Button, { size: "sm", onClick: function () {
+        }
+    }, accountEllipsis)) : (React.createElement(Button, {
+        size: "sm", onClick: function () {
             onPresentConnectModal();
-        } }, "Connect"))));
+        }
+    }, "Connect"))));
 };
 
 var Icon$1f = function (props) {
@@ -2655,7 +2722,7 @@ var MobileOnlyOverlay = styled(Overlay)(templateObject_5$1 || (templateObject_5$
 });
 var Menu = function (_a) {
     var _b;
-    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, priceLink = _a.priceLink, profile = _a.profile, children = _a.children;
+    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, zaifPriceUsd = _a.zaifPriceUsd, links = _a.links, priceLinkZfai = _a.priceLinkZfai, priceLinkZaif = _a.priceLinkZaif, profile = _a.profile, children = _a.children;
     var isXl = useMatchBreakpoints().isXl;
     var isMobile = isXl === false;
     var _c = useState(!isMobile), isPushed = _c[0], setIsPushed = _c[1];
@@ -2698,7 +2765,7 @@ var Menu = function (_a) {
                 React.createElement(UserBlock, { account: account, login: login, logout: logout }),
                 profile && React.createElement(Avatar, { profile: profile }))),
         React.createElement(BodyWrapper, null,
-            React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, priceLink: priceLink }),
+            React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, zaifPriceUsd: zaifPriceUsd, pushNav: setIsPushed, links: links, priceLinkZfai: priceLinkZfai, priceLinkZaif: priceLinkZaif }),
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
@@ -2802,12 +2869,16 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#f1f0f0", backgroundDisabled: "#E9EAEB", contrast: "#0b2b27", invertedContrast: "#FFFFFF", input: "#ebf4ea", tertiary: "#EFF4F5", text: "#0e3731", textDisabled: "#BDC2C4", textSubtle: "#1e5951", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), {
+    background: "#f1f0f0", backgroundDisabled: "#E9EAEB", contrast: "#0b2b27", invertedContrast: "#FFFFFF", input: "#ebf4ea", tertiary: "#EFF4F5", text: "#0e3731", textDisabled: "#BDC2C4", textSubtle: "#1e5951", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
-    } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#0f5f54", background: "#343135", backgroundDisabled: "#28a392", contrast: "#FFFFFF", invertedContrast: "#0d4039", input: "#0098A1", primaryDark: "#0098A1", tertiary: "#28a392", text: "#FFFFFF", textDisabled: "#cccccc", textSubtle: "#c9c4d4", borderColor: "#28a392", card: "#27262c", gradients: {
+    }
+});
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), {
+    secondary: "#0f5f54", background: "#343135", backgroundDisabled: "#28a392", contrast: "#FFFFFF", invertedContrast: "#0d4039", input: "#0098A1", primaryDark: "#0098A1", tertiary: "#28a392", text: "#FFFFFF", textDisabled: "#cccccc", textSubtle: "#c9c4d4", borderColor: "#28a392", card: "#27262c", gradients: {
         bubblegum: "linear-gradient(139.73deg, #0f5f54 0%, #0e3731 100%)",
-    } });
+    }
+});
 
 var light = {
     background: lightColors.card,
@@ -2951,4 +3022,4 @@ var darkTheme = __assign(__assign({}, base), { isDark: true, alert: dark, button
 
 var lightTheme = __assign(__assign({}, base), { isDark: false, alert: light, button: light$1, colors: lightColors, card: light$2, toggle: light$4, nav: light$5, modal: light$6, radio: light$3 });
 
-export { Icon$4 as AddIcon, Alert, Icon$5 as ArrowBackIcon, Icon$6 as ArrowDownIcon, Icon$7 as ArrowDropDownIcon, Icon$8 as ArrowDropUpIcon, Icon$9 as ArrowForwardIcon, Icon$a as AutoRenewIcon, BackgroundImage, GridLayout as BaseLayout, Icon$b as BinanceIcon, Icon$2 as BlockIcon, Breadcrumbs, Icon$c as BunnyPlaceholderIcon, Button, ButtonMenu, ButtonMenuItem, Icon$e as CalculateIcon, Card, CardBody, CardFooter, CardHeader, CardRibbon, Icon$d as CardViewIcon, GridLayout$1 as CardsLayout, Checkbox, Icon as CheckmarkCircleIcon, Icon$f as CheckmarkIcon, Icon$g as ChevronDownIcon, Icon$h as ChevronLeftIcon, Icon$i as ChevronRightIcon, Icon$j as ChevronUpIcon, Icon$k as CloseIcon, Icon$l as CogIcon, Icon$m as CommunityIcon, Icon$n as CopyIcon, Dropdown, Icon$1 as ErrorIcon, Flex, Heading, Icon$o as HelpIcon, IconButton, Image, Icon$3 as InfoIcon, Input, Link, LinkExternal, Icon$p as ListViewIcon, Icon$q as LogoIcon, Icon$r as LogoRoundIcon, Menu, Icon$s as MinusIcon, Modal, ModalProvider, Icon$t as OpenNewIcon, Icon$v as PancakeRoundIcon, Icon$u as PancakesIcon, Icon$w as PrizeIcon, Progress, Icon$z as ProgressBunny, Radio, Icon$x as RemoveIcon, ResetCSS, Icon$D as SearchIcon, Skeleton, Spinner, Svg, Icon$E as SwapVertIcon, Icon$F as SyncAltIcon, Tag, Text, Icon$B as Ticket, Icon$C as TicketRound, ToastContainer, Toggle, Icon$y as VerifiedIcon, Icon$G as WarningIcon, Icon$A as Won, variants$1 as alertVariants, byTextAscending, byTextDescending, darkTheme as dark, darkColors, lightTheme as light, lightColors, makeRender, links as menuConfig, types as toastTypes, useMatchBreakpoints, useModal, useParticleBurst, useTable, useWalletModal };
+export { Icon$4 as AddIcon, Alert, Icon$5 as ArrowBackIcon, Icon$6 as ArrowDownIcon, Icon$7 as ArrowDropDownIcon, Icon$8 as ArrowDropUpIcon, Icon$9 as ArrowForwardIcon, Icon$a as AutoRenewIcon, BackgroundImage, GridLayout as BaseLayout, Icon$b as BinanceIcon, Icon$2 as BlockIcon, Breadcrumbs, Icon$c as BunnyPlaceholderIcon, Button, ButtonMenu, ButtonMenuItem, Icon$e as CalculateIcon, Card, CardBody, CardFooter, CardHeader, CardRibbon, Icon$d as CardViewIcon, GridLayout$1 as CardsLayout, Checkbox, Icon as CheckmarkCircleIcon, Icon$f as CheckmarkIcon, Icon$g as ChevronDownIcon, Icon$h as ChevronLeftIcon, Icon$i as ChevronRightIcon, Icon$j as ChevronUpIcon, Icon$k as CloseIcon, Icon$l as CogIcon, Icon$m as CommunityIcon, Icon$n as CopyIcon, Dropdown, Icon$1 as ErrorIcon, Flex, Heading, Icon$o as HelpIcon, IconButton, Image, Icon$3 as InfoIcon, Input, Link, LinkExternal, Icon$p as ListViewIcon, Icon$q as LogoIcon, Icon$r as LogoRoundIcon, Menu, Icon$s as MinusIcon, Modal, ModalProvider, Icon$t as OpenNewIcon, Icon$v as PancakeRoundIcon, Icon$v2 as PancakeRoundIcon2, Icon$u as PancakesIcon, Icon$w as PrizeIcon, Progress, Icon$z as ProgressBunny, Radio, Icon$x as RemoveIcon, ResetCSS, Icon$D as SearchIcon, Skeleton, Spinner, Svg, Icon$E as SwapVertIcon, Icon$F as SyncAltIcon, Tag, Text, Icon$B as Ticket, Icon$C as TicketRound, ToastContainer, Toggle, Icon$y as VerifiedIcon, Icon$G as WarningIcon, Icon$A as Won, variants$1 as alertVariants, byTextAscending, byTextDescending, darkTheme as dark, darkColors, lightTheme as light, lightColors, makeRender, links as menuConfig, types as toastTypes, useMatchBreakpoints, useModal, useParticleBurst, useTable, useWalletModal };
