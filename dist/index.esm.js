@@ -2247,7 +2247,7 @@ var socials = [
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/ZaigarF",
+        href: "https://twitter.com/Zaigar3",
     },
 ];
 
@@ -2384,10 +2384,10 @@ var PanelFooter = function (_a) {
     return (React.createElement(Container$4, null,
         React.createElement(SocialEntry, null,
             cakePriceUsd ? (React.createElement(PriceLink, { href: priceLinkZfai, target: "_blank" },
-                React.createElement(Icon$v, { width: "34px", mr: "8px" }),
+                React.createElement(Icon$v, { width: "30px", mr: "8px" }),
                 React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
             cakePriceUsd ? (React.createElement(PriceLink, { href: priceLinkZaif, target: "_blank" },
-                React.createElement(Icon$v2, { width: "24px", mr: "8px" }),
+                React.createElement(Icon$v2, { width: "30px", mr: "8px" }),
                 React.createElement(Text, { color: "textSubtle", bold: true }, "$" + zaifPriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }))
         ),
         React.createElement(SocialEntry2, null, socials.map(function (social, index) {
