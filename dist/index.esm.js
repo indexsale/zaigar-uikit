@@ -2247,7 +2247,7 @@ var socials = [
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/Zaigar3",
+        href: "https://twitter.com/ZaigarF",
     },
 ];
 
