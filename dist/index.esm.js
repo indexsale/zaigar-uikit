@@ -2210,7 +2210,7 @@ var StyledProgress = styled.div(templateObject_2$j || (templateObject_2$j = __ma
     "\n  ",
     "\n  ", "\n"])), function (_a) {
     var theme = _a.theme;
-    return theme.colors.input;
+    return theme.colors.light;
 }, function (_a) {
     var theme = _a.theme;
     return theme.shadows.inset;
