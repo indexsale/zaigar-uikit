@@ -1,22 +1,22 @@
-# Zaigar Finance UIkit
+# Doge Gold Floki Finance UIkit
 
 [![Version](https://img.shields.io/npm/v/@pancakeswap-libs/uikit)](https://www.npmjs.com/package/@pancakeswap-libs/uikit) [![Size](https://img.shields.io/bundlephobia/min/@pancakeswap-libs/uikit)](https://www.npmjs.com/package/@pancakeswap-libs/uikit)
 
-Zaigar Finance UIkit is a set of React components and hooks used to build pages on Zaigar Finance's apps. It also contains a theme file for dark and light mode.
+Doge Gold Floki Finance UIkit is a set of React components and hooks used to build pages on Doge Gold Floki Finance's apps. It also contains a theme file for dark and light mode.
 
 ## Install
 
-`yarn add @zaigar-finance/uikit`
+`yarn add @Doge_Gold_Floki-finance/uikit`
 
 ## Setup
 
 ### Theme
 
-Before using Zaigar Finance UIkit, you need to provide the theme file to styled-component.
+Before using Doge Gold Floki Finance UIkit, you need to provide the theme file to styled-component.
 
 ```
 import { ThemeProvider } from 'styled-components'
-import { light, dark } from '@zaigar-finance/uikit'
+import { light, dark } from '@Doge_Gold_Floki-finance/uikit'
 ...
 <ThemeProvider theme={isDark}>...</ThemeProvider>
 ```
@@ -26,7 +26,7 @@ import { light, dark } from '@zaigar-finance/uikit'
 A reset CSS is available as a global styled component.
 
 ```
-import { ResetCSS } from '@zaigar-finance/uikit'
+import { ResetCSS } from '@Doge_Gold_Floki-finance/uikit'
 ...
 <ResetCSS />
 ```
