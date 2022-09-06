@@ -7,13 +7,13 @@ export declare const scales: {
     readonly XS: "xs";
 };
 export declare const variants: {
-    readonly PRIMARY: "primary";
-    readonly SECONDARY: "secondary";
-    readonly TERTIARY: "tertiary";
-    readonly TEXT: "text";
-    readonly DANGER: "danger";
-    readonly SUBTLE: "subtle";
-    readonly SUCCESS: "success";
+    readonly PRIMARY: "c0c0c0";
+    readonly SECONDARY: "c0c0c0";
+    readonly TERTIARY: "c0c0c0";
+    readonly TEXT: "c0c0c0";
+    readonly DANGER: "c0c0c0";
+    readonly SUBTLE: "c0c0c0";
+    readonly SUCCESS: "c0c0c0";
 };
 export declare type Scale = typeof scales[keyof typeof scales];
 export declare type Variant = typeof variants[keyof typeof variants];
