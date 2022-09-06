@@ -99,11 +99,11 @@ export const links = [
       // },
       {
         label: "Github",
-        href: "https://github.com/goosedefi/",
+        href: "https://github.com/Doge-Gold-Floki/",
       },
       {
         label: 'Docs',
-        href: 'https://zcore-network.gitbook.io/zcore-finance/',
+        href: 'https://doge-gold-floki-finance.gitbook.io/dgf/',
       },
     ],
   },
@@ -116,7 +116,7 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/ZCoreFinance",
+        href: "https://t.me/Doge_Gold_Floki",
       },
       {
         label: "Português",
@@ -175,7 +175,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/ZCoreCrypto",
+    href: "https://twitter.com/Doge_Gold_Floki",
   },
 ];
 
