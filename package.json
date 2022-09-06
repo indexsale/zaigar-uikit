@@ -1,5 +1,5 @@
 {
-  "name": "@zaigar-finance/uikit",
+  "name": "@Dogev1-uikit/uikit",
   "version": "0.2.4",
   "description": "Set of UI components for zaigar finance projects",
   "main": "dist/index.cjs.js",
@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/zaigar-finance/zai-uikit",
+  "repository": "https://github.com/Dogev1-uikit",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
